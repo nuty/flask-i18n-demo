@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>flask-i18n-demo</title>
+</head>
+<body>
+    <h1>{{ _('hello, world!') }}</h1>
+<select class="pull-right" onchange="location = this.options[this.selectedIndex].value;">
+  <option>Languages</option>
+  <option value="{{ url_for("lang") }}?lang=zh_CN">中文</option>
+  <option value="{{ url_for("lang") }}?lang=en_US">English</option>
+</select>
+</body>
+</html>
